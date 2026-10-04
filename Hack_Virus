@@ -1,0 +1,97 @@
+
+
+import random
+import os
+import sys
+import time 
+
+def print_separator():
+    print("=" * 50)
+
+def loading_message(message, delay=0.5):
+    for char in message:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(delay)
+    print()
+
+os.system('clear')
+E = '\033[1;31m'
+B = '\033[2;36m'
+G = '\033[1;32m'
+S = '\033[1;33m'
+os.system('clear')
+R = '\033[1;31m' 
+X = '\033[1;33m' 
+R2 = '\033[2;31m' 
+G = '\033[2;32m' 
+B = '\033[2;34m'
+P = '\033[2;35m' 
+B2 = '\033[2;36m'
+B3 = '\033[1;34m'  
+
+print(P+"")
+
+print("""
+ Telegram : @Kabosha6
+Telegram : @kabosha12
+
+""")
+
+
+
+print(G+"")
+
+SYMBOLS = ["💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀", "*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~*~๑๑๑๑๑๑๑๑~* *~", "*9999999*9999999* **9999999* **9999999* **9999999* **9999999* **9999999* **9999999* **9999999@Hacker_free_1bot@Hacker_free_1bot@Hacker_free_1bot* **9999999* **9999999* **9999999* **9999999* **9999999* **9999999* **9999999* **9999999* **9999999* **9999999* **9999999* ** *"]
+
+
+def decorate(name):
+    left = "".join(random.choice(SYMBOLS) for _ in range(3))
+    right = "".join(random.choice(SYMBOLS) for _ in range(3))
+    return f"{left}{name}{right}"
+
+
+def main():
+    os.system("clear")
+
+    print("=" * 60)
+    print("      ")
+    print("=" * 60)
+
+    name = input(
+        f'''
+{R}Write your name{G}
+        
+        '''
+)
+    print(R+"")
+
+    if not name:
+        print("Write the name")
+        return
+
+    print("Construction is underway")
+    
+    print(G+"")
+
+    results = []
+
+    for _ in range(5000):
+        results.append(decorate(name))
+
+    
+    columns = 4
+
+    print("=" * 60)
+
+    for i in range(0, 5000, columns):
+        row = results[i:i + columns]
+
+        print("    ".join(f"{x:<18}" for x in row))
+
+    print("=" * 60)
+    print("Completed")
+
+
+if __name__ == "__main__":
+    main()
